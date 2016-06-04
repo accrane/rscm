@@ -1,0 +1,117 @@
+
+div {
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+.clear {clear: both;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1200px;
+		padding: 0px;
+	}
+}
+#masthead {
+	border-bottom: 10px solid $color-grey-blue;
+	overflow: hidden;
+	padding: 20px 0;
+	margin: 0 0 40px 0;
+}
+.tagline {
+	width: auto;
+	float: right;
+	font: {
+		size: 26px;
+		style: italic;
+	}
+	color: $color-blue;
+	margin: 50px 0 0 0;
+}
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+		border-right: 1px solid $color-gold;
+		padding: 0 3% 0  0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.site-footer {
+	background-color: $color-blue;
+	color: #fff;
+	text-align: center;
+	clear: both;
+	padding: 30px 0;
+
+	a {
+		color: #fff;
+	}
+}
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+/* Logo */
+.logo , h1.logo {
+	width: 256px;
+	height: 131px;
+	background-image: url(images/rscm-america.jpg);	
+	margin: 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 256px;
+	height: 131px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+	
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}

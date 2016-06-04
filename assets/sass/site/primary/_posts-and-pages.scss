@@ -1,0 +1,142 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+.form-control {
+	width: 100%;
+	position: relative;
+	// overflow: hidden;
+	height: 700px;
+
+	
+	.gform_wrapper .gsection {
+		border-bottom: 1px solid $color-gold;
+	}
+
+	.gform_wrapper .gsection h2 {
+		font{
+			size: 18px;
+			weight: 400 !important;
+		}
+	}
+
+}
+li h2.gsection_title {
+	font{
+			size: 18px;
+			weight: 400 !important;
+		}
+}
+.form-control {
+	margin-bottom: 50px;
+
+	.gform_body ul li label.gfield_label {
+		font{
+			size: 18px !important;
+			weight: 400 !important;
+		}
+	}
+}
+input[type=text] {
+	background-color: $color-grey;
+}
+.form-control 
+li#field_2_1, 
+li#field_2_2,
+li#field_2_3,
+li#field_2_4,
+li#field_2_5,
+li#field_2_6,
+li#field_2_7,
+li#field_2_8,
+li#field_2_10 {
+	width: 50%;
+	height :50px;
+}
+li#field_2_9 {
+	width: 100%;
+	height: 50px;
+}
+.form-control .gform_wrapper ul li.gfield {
+	clear: none;
+}
+li#field_2_1, 
+li#field_2_2,
+li#field_2_3,
+li#field_2_4,
+li#field_2_10
+{
+	position: absolute;
+	left: 0;
+}
+
+li#field_2_5,
+li#field_2_6,
+li#field_2_7,
+li#field_2_8,
+li#field_2_9,
+li#field_2_11
+{
+	position: absolute;
+	right: 0;
+}
+li#field_2_1 {top: 0;}
+li#field_2_2 {top: 100px;}
+li#field_2_3 {top: 150px;}
+li#field_2_4 {top: 200px;}
+li#field_2_5 {top: 0px;}
+li#field_2_6 {top: 100px;}
+li#field_2_7 {top: 150px;}
+li#field_2_8 {top: 200px;}
+li#field_2_9 {top: 200px;}
+li#field_2_10 {top: 300px;}
+li#field_2_11 {top: 300px;}
+
+.form-control .gform_footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+button, input[type=submit] {
+	background-color :$color-blue;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 0;
+	text-shadow: none;
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	&:hover {
+		box-shadow: none;
+		border: 0;
+		text-shadow: none;
+	}
+}

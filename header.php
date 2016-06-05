@@ -22,6 +22,13 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
+
+<div class="top-account">
+	<div class="account-login">
+		<a href="#">login to your account</a>
+	</div>
+</div>
+
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'acstarter' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">

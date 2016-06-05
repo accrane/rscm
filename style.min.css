@@ -1394,6 +1394,7 @@ div{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-
 }@media screen and (min-width:1200px){}
 .site-footer{background-color:#26357a;color:#fff;text-align:center;clear:both;padding:30px 0}
 .site-footer a{color:#fff}
+.site-info{margin-bottom:30px}
 .widget-area{width:100%;margin:0 auto}
 @media screen and (min-width:600px){.widget-area{width:26%;float:right;margin:0}
 }@media screen and (min-width:1200px){}
@@ -1402,20 +1403,27 @@ div{overflow-wrap:break-word;word-wrap:break-word;-ms-word-break:break-all;word-
 }@media screen and (min-width:1200px){}
 .logo a,h1.logo a{width:256px;height:131px;display:block;text-indent:-9000px}
 @media screen and (min-width:1200px){}
+.top-account{width:100%;position:fixed;height:20px;background-color:#ececec;top:0}
+.account-login{width:auto;float:right;margin:5px 5% 0 0;font-size:14px;-webkit-transition:all ease .3s;transition:all ease .3s}
+.account-login a{background-color:#ececec;padding:10px 20px;border-radius:5px;color:#475489;text-decoration:none}
+.account-login:hover{margin:13px 5% 0 0}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
 .single .byline,.group-blog .byline{display:inline}
 .page-content,.entry-content,.entry-summary{margin:1.5em 0 0}
 .page-links{clear:both;margin:0 0 1.5em}
-.form-control{width:100%;position:relative;height:700px}
+.form-control{width:100%;position:relative;height:700px;margin-bottom:50px}
 .form-control .gform_wrapper .gsection{border-bottom:1px solid #e8dba4}
-.form-control .gform_wrapper .gsection h2 font{size:18px;weight:400 !important}
-li h2.gsection_title font{size:18px;weight:400 !important}
-.form-control{margin-bottom:50px}
-.form-control .gform_body ul li label.gfield_label font{size:18px !important;weight:400 !important}
-input[type=text]{background-color:#ececec}
-.form-control li#field_2_1,li#field_2_2,li#field_2_3,li#field_2_4,li#field_2_5,li#field_2_6,li#field_2_7,li#field_2_8,li#field_2_10{width:50%;height:50px}
+.form-control .gform_wrapper .gsection h2{text-transform:uppercase;font-size:20px;font-weight:400}
+.form-control li h2.gsection_title{font-size:18px;font-weight:400}
+.form-control .gform_wrapper .left_label li.field_sublabel_below .gfield_label{font-size:18px;font-weight:400}
+.form-control li.gfield select{background-color:#ececec;width:89% !important;position:relative;padding:10px;background-image:url(images/select-arrow.png);background-position:right 10px top 10px;background-repeat:no-repeat}
+select{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+input[type=text],.form-control textarea{background-color:#ececec}
+.form-control .gform_wrapper .left_label input.medium{width:60%}
+.form-control .gform_wrapper .left_label .gfield_label{width:24%}
+li#field_2_1,li#field_2_2,li#field_2_3,li#field_2_4,li#field_2_5,li#field_2_6,li#field_2_7,li#field_2_8,li#field_2_10,li#field_2_11{width:50%;height:50px}
 li#field_2_9{width:100%;height:50px}
 .form-control .gform_wrapper ul li.gfield{clear:none}
 li#field_2_1,li#field_2_2,li#field_2_3,li#field_2_4,li#field_2_10{position:absolute;left:0}
@@ -1435,6 +1443,10 @@ li#field_2_11{top:300px}
 button,input[type=submit]{background-color:#26357a;color:#fff;border-radius:5px;box-shadow:none;border:0;text-shadow:none}
 button a,input[type=submit] a{color:#fff;text-decoration:none}
 button:hover,input[type=submit]:hover{box-shadow:none;border:0;text-shadow:none}
+.form-control .gform_wrapper .gform_footer input[type=submit],button.login{padding:20px 50px}
+button.download{padding:10px 30px;margin-bottom:10px;width:100px}
+.clear{clear:both}
+li#field_2_10 label,li#field_2_11 label,li#field_2_11 textarea{width:100%;margin-bottom:15px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

@@ -31,40 +31,56 @@
 	position: relative;
 	// overflow: hidden;
 	height: 700px;
-
+	margin-bottom: 50px;
 	
 	.gform_wrapper .gsection {
 		border-bottom: 1px solid $color-gold;
 	}
 
 	.gform_wrapper .gsection h2 {
-		font{
+		text-transform: uppercase;
+		font: {
+			size: 20px;
+			weight: 400;
+		}
+	}
+	li h2.gsection_title {
+		font: {
+				size: 18px;
+				weight: 400;
+			}
+	}
+	.gform_wrapper .left_label li.field_sublabel_below .gfield_label {
+		font: {
 			size: 18px;
-			weight: 400 !important;
+			weight: 400;
+		}
+	}
+	li.gfield select {
+		background-color: $color-grey;
+		width: 89% !important;
+		position: relative;
+		padding: 10px;
+		background: {
+			image: url(images/select-arrow.png);
+			position: right 10px top 10px;
+			repeat: no-repeat;
 		}
 	}
 
 }
-li h2.gsection_title {
-	font{
-			size: 18px;
-			weight: 400 !important;
-		}
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
 }
-.form-control {
-	margin-bottom: 50px;
-
-	.gform_body ul li label.gfield_label {
-		font{
-			size: 18px !important;
-			weight: 400 !important;
-		}
-	}
-}
-input[type=text] {
+input[type=text], .form-control textarea {
 	background-color: $color-grey;
 }
-.form-control 
+.form-control  .gform_wrapper .left_label input.medium {
+	width: 60%;
+}
+.form-control .gform_wrapper .left_label .gfield_label {width: 24%;}
 li#field_2_1, 
 li#field_2_2,
 li#field_2_3,
@@ -73,7 +89,9 @@ li#field_2_5,
 li#field_2_6,
 li#field_2_7,
 li#field_2_8,
-li#field_2_10 {
+li#field_2_10, 
+li#field_2_11
+{
 	width: 50%;
 	height :50px;
 }
@@ -139,4 +157,24 @@ button, input[type=submit] {
 		border: 0;
 		text-shadow: none;
 	}
+}
+.form-control .gform_wrapper .gform_footer input[type=submit],
+button.login
+ {
+	padding: 20px 50px;
+}
+button.download {
+	padding: 10px 30px;
+	margin-bottom: 10px;
+	width: 100px;
+}
+.clear {clear: both;}
+/*
+
+Shift Label placement for these two
+
+*/
+li#field_2_10 label, li#field_2_11 label, li#field_2_11 textarea {
+	width: 100%;
+	margin-bottom: 15px;
 }

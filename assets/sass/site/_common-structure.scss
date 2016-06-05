@@ -72,6 +72,9 @@ div {
 		color: #fff;
 	}
 }
+.site-info {
+	margin-bottom: 30px;
+}
 .widget-area {
 	width: 100%;
 	margin: 0px auto;
@@ -113,5 +116,33 @@ div {
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
+	}
+}
+.top-account {
+	width: 100%;
+	position: fixed;
+	height: 20px;
+	background-color: $color-grey;
+	top: 0;
+}
+.account-login {
+	width: auto;
+	float: right;
+	margin: 5px 5% 0 0;
+	font-size: 14px;
+	@include transition(all ease .3s);
+
+	a {
+		background-color: $color-grey;
+		padding: 10px 20px;
+		border-radius: 5px;
+		color: $color-grey-blue;
+		text-decoration: none;
+		
+
+		
+	}
+	&:hover {
+		margin: 13px 5% 0 0;	
 	}
 }

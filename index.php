@@ -37,7 +37,8 @@ $more_information = get_field('more_information');
 
 	<div id="secondary" class="widget-area">
 		<section class="login">
-			Already have an account?
+			<p><strong>Already have an account?</strong></p>
+			
 
 			<button class="login">
 				<a href="#">Login Here</a>
@@ -46,15 +47,19 @@ $more_information = get_field('more_information');
 		</section>
 
 		<section class="download">
-			Download forms below.
+			<p><strong>Download forms below.</strong></p>
 
 			<button class="download">
 				<a href="<?php echo $bronze_form_requirements; ?>">Bronze</a>
 			</button>
 
+			<div class="clear"></div>
+
 			<button class="download">
 				<a href="<?php echo $silver_form_requirements; ?>">Silver</a>
 			</button>
+
+			<div class="clear"></div>
 
 			<button class="download">
 				<a href="<?php echo $what_happens_next; ?>">Gold</a>

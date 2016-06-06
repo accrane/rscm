@@ -25,7 +25,7 @@
 
 <div class="top-account">
 	<div class="account-login">
-		<a href="#">login to your account</a>
+		<a href="<?php bloginfo('url'); ?>/login">login to your account</a>
 	</div>
 </div>
 
@@ -44,8 +44,25 @@
 	            </div>
 	        <?php } ?>
 
+	        <?php global $user_login;
 
-	        <div class="tagline"><?php bloginfo('description'); ?></div>
+	        if ( is_user_logged_in() ) : ?>
+	        <div class="loged-in-user">
+	        	<h3>My account</h3>
+	        	<?php 
+	        	$user_ID = get_current_user_id();
+	        	$user_info = get_userdata($user_ID);
+	        	?>
+	        	<div class="logedin-heading">
+	        		APPLICANT
+	        	</div>
+	        	<div class="logedin-copy">
+	        		<?php echo 'Username: ' . $user_info->user_login . "\n";?>
+	        	</div>
+	        </div>
+		    <?php else: ?>
+		        <div class="tagline"><?php bloginfo('description'); ?></div>
+		    <?php endif; ?>
 
 			<!--<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>

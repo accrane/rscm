@@ -84,7 +84,7 @@ input[type=text], .form-control textarea {
 li#field_2_1, 
 li#field_2_2,
 li#field_2_3,
-li#field_2_4,
+li#field_2_12,
 li#field_2_5,
 li#field_2_6,
 li#field_2_7,
@@ -105,7 +105,7 @@ li#field_2_9 {
 li#field_2_1, 
 li#field_2_2,
 li#field_2_3,
-li#field_2_4,
+li#field_2_12,
 li#field_2_10
 {
 	position: absolute;
@@ -125,7 +125,7 @@ li#field_2_11
 li#field_2_1 {top: 0;}
 li#field_2_2 {top: 100px;}
 li#field_2_3 {top: 150px;}
-li#field_2_4 {top: 200px;}
+li#field_2_12 {top: 200px;}
 li#field_2_5 {top: 0px;}
 li#field_2_6 {top: 100px;}
 li#field_2_7 {top: 150px;}
@@ -139,34 +139,65 @@ li#field_2_11 {top: 300px;}
 	position: absolute;
 	bottom: 0;
 }
-button, input[type=submit] {
+a.button {
+	width: auto;
+	text-align: center;
+	box-shadow: none;
+	border: 0;
+	text-shadow: none;
+	padding: 0;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
 	background-color :$color-blue;
 	color: #fff;
 	border-radius: 5px;
 	box-shadow: none;
 	border: 0;
 	text-shadow: none;
-
-	a {
-		color: #fff;
-		text-decoration: none;
-	}
+	@include transition(all ease .3s);
 
 	&:hover {
+		background-color: $color-yellow;
+		color: #fff;
 		box-shadow: none;
 		border: 0;
 		text-shadow: none;
 	}
 }
-.form-control .gform_wrapper .gform_footer input[type=submit],
-button.login
- {
+.form-control .gform_wrapper .gform_footer input[type=submit], .login-submit input[type=submit]{
+	
+	color: #fff;
+	text-decoration: none;
+	background-color :$color-blue;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 0;
+	text-shadow: none;
 	padding: 20px 50px;
+	@include transition(all ease .3s);
+
+	&:hover {
+		box-shadow: none;
+		border: 0;
+		text-shadow: none;
+		background-color: $color-yellow;
+		color: #fff;
+	}
 }
-button.download {
+a.login
+
+ {
+ 	padding: 20px 50px;
+ 	a {
+ 		
+ 	}
+	
+}
+a.download {
 	padding: 10px 30px;
-	margin-bottom: 10px;
-	width: 100px;
+	margin: 0 0 10px 0;
 }
 .clear {clear: both;}
 /*
@@ -177,4 +208,51 @@ Shift Label placement for these two
 li#field_2_10 label, li#field_2_11 label, li#field_2_11 textarea {
 	width: 100%;
 	margin-bottom: 15px;
+}
+.warning {
+	width: 60%;
+	margin: 50px auto;
+	min-height: 500px;
+	h2 {
+		font: {
+			size: 30px;
+		}
+		line-height: 1.1;
+	}
+}
+.loged-in-user{
+	width: auto;
+	float: right;
+	margin: 40px 0 0 0;
+
+	h3 {
+		margin: 0 0 5px 0;
+		font: {
+			size: 14px;
+		}
+	}
+
+	.logedin-heading {
+		margin: 0 0 5px 0;
+		font: {
+			size: 12px;
+		}
+	}
+	.logedin-copy {
+		margin: 0 0 5px 0;
+		font: {
+			size: 12px;
+		}
+	}
+}
+.login-username, .login-password {
+	label {
+		width: 100%;
+		text-align: center;
+		font-size: 30px;
+	}
+	input {
+		width: 100%;
+		padding: 15px 40px;
+	}
 }

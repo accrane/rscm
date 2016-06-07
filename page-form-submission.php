@@ -34,14 +34,18 @@ global $user_login;
 
             	
 			    <?php 
-			    if(is_page('gold-form')) {
-			    	echo do_shortcode('[gravityform id="3" title="false" description="false"]'); 
-			    } else {
-			    	echo do_shortcode('[gravityform id="4" title="false" description="false"]');
-			    }
-			     ?>
-			 
-			    <?php   ?>
+			    if(is_page('gold-form')) { ?>
+			    <div class="entry-content">
+			    	<?php the_content(); ?>
+			    </div>
+			    	<?php echo do_shortcode('[gravityform id="3" title="false" description="false"]'); ?>
+			   <?php } else { ?>
+			   <div class="entry-content">
+			   		<?php the_content(); ?>
+			   </div>
+			    	<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]'); ?>
+			    <?php } ?>
+			    
 			  
 
             	<?php

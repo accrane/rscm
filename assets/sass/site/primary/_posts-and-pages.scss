@@ -30,7 +30,7 @@
 	width: 100%;
 	position: relative;
 	// overflow: hidden;
-	height: 700px;
+	min-height: 600px;
 	margin-bottom: 50px;
 	
 	.gform_wrapper .gsection {
@@ -129,11 +129,11 @@ li#field_2_8,
 li#field_2_9,
 li#field_2_11,
 
-li#field_3_5
-{
-	position: absolute;
-	right: 0;
-}
+// li#field_3_5
+// {
+// 	position: absolute;
+// 	right: 0;
+// }
 li#field_2_1 {top: 0;}
 li#field_2_2 {top: 100px;}
 li#field_2_3 {top: 150px;}
@@ -148,20 +148,32 @@ li#field_2_11 {top: 300px;}
 
 // other form
 li#field_3_5 {
-	top: 50px;
+	// top: 50px;
+	height: 200px;
 
 	label, textarea {
 		width: 100%;
 		margin-bottom: 10px;
 	}
 }
+li#field_3_5,
+li#field_3_6,
+li#field_3_10 {
+	width: 100%;
+	clear: both;
+	margin: 30px 0 0 0;
+}
 
-
-.form-control .gform_footer {
+.form-control  #gform_wrapper_2 .gform_footer {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
 }
+.form-control #gform_wrapper_3 .gform_footer {
+	width: 100%;
+	clear: both;
+}
+
 a.button,
 .button-style-blue a,
 .button-style-blue
@@ -280,4 +292,30 @@ li#field_2_10 label, li#field_2_11 label, li#field_2_11 textarea {
 		width: 100%;
 		padding: 15px 40px;
 	}
+}
+
+// multi file uploader
+.plupload_header {
+	background-color: $color-blue;
+}
+ul.tabs  {
+	border-bottom: 1px solid $color-blue;
+	margin: 0;
+}
+.tabs li {
+	list-style:none;
+	display:inline;
+}
+
+.tabs a {
+	padding:5px 10px;
+	display:inline-block;
+	background:$color-grey-blue;
+	color:#fff;
+	text-decoration:none;
+}
+
+.tabs a.active {
+	background:$color-yellow;
+	color:#000;
 }

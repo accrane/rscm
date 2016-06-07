@@ -12,8 +12,16 @@ global $user_login;
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<header class="entry-header">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</header><!-- .entry-header -->
+
 			<?php
-			while ( have_posts() ) : the_post(); ?>
+			while ( have_posts() ) : the_post(); 
+
+			$content = get_field('content');
+
+			?>
 
 			<div class="entry-content form-control">
 				<?php 
@@ -21,7 +29,7 @@ global $user_login;
 				// If user is already logged in.
             	if ( is_user_logged_in() ) :
 
-            	the_content(); 
+            	echo $content;
 
             	echo do_shortcode('[gravityform id="3" title="false" description="false"]'); 
 

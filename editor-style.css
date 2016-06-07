@@ -1,3 +1,28 @@
 .custom-color {
   color: #444;
+}ff
+
+.button-style-blue a {
+	width: auto;
+	text-align: center;
+	box-shadow: none;
+	border: 0;
+	text-shadow: none;
+	padding: 0;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	background-color :#26357a;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 0;
+	text-shadow: none;
+}
+.button-style-blue a:hover {
+	background-color: #f0ac25;
+	color: #fff;
+	box-shadow: none;
+	border: 0;
+	text-shadow: none;
 }

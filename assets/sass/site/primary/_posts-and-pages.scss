@@ -74,13 +74,18 @@ select {
    -moz-appearance: none;
    appearance: none;
 }
-input[type=text], .form-control textarea {
+// input[type="file"] {
+//     display: none;
+// }
+input[type=text], 
+.form-control textarea {
 	background-color: $color-grey;
 }
 .form-control  .gform_wrapper .left_label input.medium {
 	width: 60%;
 }
 .form-control .gform_wrapper .left_label .gfield_label {width: 24%;}
+
 li#field_2_1, 
 li#field_2_2,
 li#field_2_3,
@@ -90,7 +95,12 @@ li#field_2_6,
 li#field_2_7,
 li#field_2_8,
 li#field_2_10, 
-li#field_2_11
+li#field_2_11,
+
+li#field_3_2,
+li#field_3_3,
+li#field_3_4,
+li#field_3_5
 {
 	width: 50%;
 	height :50px;
@@ -117,7 +127,9 @@ li#field_2_6,
 li#field_2_7,
 li#field_2_8,
 li#field_2_9,
-li#field_2_11
+li#field_2_11,
+
+li#field_3_5
 {
 	position: absolute;
 	right: 0;
@@ -134,18 +146,31 @@ li#field_2_9 {top: 200px;}
 li#field_2_10 {top: 300px;}
 li#field_2_11 {top: 300px;}
 
+// other form
+li#field_3_5 {
+	top: 200px;
+
+	label, textarea {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+
 .form-control .gform_footer {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
 }
-a.button {
+a.button,
+.button-style-blue a,
+.button-style-blue
+ {
 	width: auto;
 	text-align: center;
 	box-shadow: none;
 	border: 0;
 	text-shadow: none;
-	padding: 0;
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
@@ -195,9 +220,9 @@ a.login
  	}
 	
 }
-a.download {
+a.download, .button-style-blue a, .button-style-blue {
 	padding: 10px 30px;
-	margin: 0 0 10px 0;
+	margin: 0 10px 10px 0;
 }
 .clear {clear: both;}
 /*

@@ -76,10 +76,24 @@ function my_mce_before_init_insert_formats( $init_array ) {
  
   $style_formats = array(  
     // Each array child is a format with it's own settings
+    
+     array(
+        'title' => 'Header 2',
+        'format' => 'h2',
+        //'icon' => 'bold'
+    ),
+    array(
+        'title' => 'Header 3',
+        'format' => 'h3'
+    ),
+    array(
+        'title' => 'Paragraph',
+        'format' => 'p'
+    ),
     array(  
-      'title' => 'Custom Color',  
-      'block' => 'span',  
-      'classes' => 'custom-color',
+      'title' => 'Blue Button',  
+      'inline' => 'span',  
+      'classes' => 'button-style-blue',
       'wrapper' => true,
       
     )

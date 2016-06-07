@@ -32,19 +32,8 @@ global $user_login;
 				// If user is already logged in.
             	if ( is_user_logged_in() ) : ?>
 
-            	<ul class='tabs'>
-				    <li><a href='#tab1'>Submit the Gold Form</a></li>
-				    <li><a href='#tab2'>Submit the Bronze &amp; Silver</a></li>
-				</ul>
-			  
-			  <div id='tab1'>
-			    <h2>The Gold Form</h2>
-			    <?php echo do_shortcode('[gravityform id="3" title="false" description="false"]');  ?>
-			  </div>
-			  <div id='tab2'>
-			    <h2>The Bronze &amp; Silver Form</h2>
-			    <?php echo do_shortcode('[gravityform id="4" title="false" description="false"]');  ?>
-			  </div>
+            	<a class="button login" href="<?php bloginfo('url'); ?>/gold-form">Submit a Gold Form</a>
+            	<a class="button login" href="<?php bloginfo('url'); ?>/bronze-silver-form">Submit a Silver &amp; Bronze Form</a>
 
             	<?php
 

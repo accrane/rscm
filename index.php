@@ -6,9 +6,6 @@
 
 get_header(); 
 
-
-
-
 // specific post ID you want to pull
 $post = get_post(2); 
 setup_postdata( $post );
@@ -19,12 +16,9 @@ setup_postdata( $post );
 	$silver_form_requirements = get_field('silver_form_requirements');
 	$bronze_form_requirements = get_field('bronze_form_requirements');
 	$more_information = get_field('more_information');
+	$title = get_the_title();
 
 wp_reset_postdata();
-
-
-
-
 
 ?>
 
@@ -32,20 +26,20 @@ wp_reset_postdata();
 		<main id="main" class="site-main" role="main">
 
 		<header class="entry-header">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<h1 class="entry-title"><?php echo $title; ?></h1>
 		</header><!-- .entry-header -->
 
+		<div class="entry-content"><?php echo $create_your_account; ?></div>
+
+		<div class="clear"></div>
+
 		<div class="entry-content form-control">
-
-			<?php echo $create_your_account; ?>
-
 			<?php echo do_shortcode('[gravityform id="2" title="false" description="false"]'); ?>
-
-			<?php echo $what_happens_next; ?>
-
 		</div>
 
-		
+		<div class="clear"></div>
+
+		<div class="entry-content"><?php echo $what_happens_next; ?></div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

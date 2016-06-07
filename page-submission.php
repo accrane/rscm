@@ -22,14 +22,17 @@ global $user_login;
 			$content = get_field('content');
 
 			?>
+			<div class="entry-content"><?php echo $content; ?></div>
+			
+			<div class="clear"></div>
 
 			<div class="entry-content form-control">
 				<?php 
 
 				// If user is already logged in.
-            	if ( is_user_logged_in() ) :
+            	if ( is_user_logged_in() ) : ?>
 
-            	echo $content;
+            	<?php
 
             	echo do_shortcode('[gravityform id="3" title="false" description="false"]'); 
 

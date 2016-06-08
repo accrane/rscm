@@ -1382,7 +1382,7 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
-div{-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
+div{-ms-hyphens:none;-moz-hyphens:none;-webkit-hyphens:none;hyphens:none}
 .clear{clear:both}
 .wrapper{width:100%;margin:0 auto;padding:20px}
 @media screen and (min-width:600px){.wrapper{width:100%}
@@ -1419,6 +1419,7 @@ div{-ms-hyphens:auto;-moz-hyphens:auto;-webkit-hyphens:auto;hyphens:auto}
 .form-control li h2.gsection_title{font-size:18px;font-weight:400}
 .form-control .gform_wrapper .left_label li.field_sublabel_below .gfield_label{font-size:18px;font-weight:400}
 .form-control li.gfield select{background-color:#ececec;width:89% !important;position:relative;padding:10px;background-image:url(images/select-arrow.png);background-position:right 10px top 10px;background-repeat:no-repeat}
+.form-control .gsection_description{padding:0;margin-top:-10px}
 select{-webkit-appearance:none;-moz-appearance:none;appearance:none}
 input[type=text],.form-control textarea{background-color:#ececec}
 .form-control .gform_wrapper .left_label input.medium{width:60%}

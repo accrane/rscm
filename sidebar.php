@@ -41,7 +41,7 @@ global $user_login;
 
 			<div class="clear"></div>
 
-			<a class="button download" href="<?php echo $what_happens_next; ?>">Gold</a>
+			<a class="button download" href="<?php echo $gold_form_requirements; ?>">Gold</a>
 
 
 		</section>

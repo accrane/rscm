@@ -18,10 +18,20 @@ global $user_login;
 
 <div id="secondary" class="widget-area">
 		<section class="login">
-			<p><strong>Already have an account?</strong></p>
+			<p><strong>Log in</strong></p>
 			
 			<?php if ( is_user_logged_in() ) : ?>
-				<a class="button login" href="<?php bloginfo('url'); ?>/rscm-awards-application/">Submit a Candidate</a>
+				<?php if(is_page(32)) {
+						echo '<p>Do you need to submit another candidate?</p>';
+					?>
+
+					<a class="button login" href="<?php bloginfo('url'); ?>/rscm-awards-application/">Submit another Candidate</a>
+
+					<?php } else { ?>
+						<a class="button login" href="<?php bloginfo('url'); ?>/rscm-awards-application/">Submit a Candidate</a>
+					<?php 	} ?>
+				
+				
 			<?php else: ?>
 				
 				<a class="button login" href="<?php bloginfo('url'); ?>/login">Login Here</a>

@@ -31,6 +31,7 @@ global $user_login;
 					<a class="button login" href="<?php bloginfo('url'); ?>/rscm-awards-application/">Submit another Candidate</a>
 
 					<?php } else { ?>
+					<p>Already have an account?</p>
 						<a class="button login" href="<?php bloginfo('url'); ?>/rscm-awards-application/">Submit a Candidate</a>
 					<?php 	} ?>
 				
